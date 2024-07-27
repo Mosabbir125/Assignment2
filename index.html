@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <nav>
+            <h1><i>Fitness</i></h1>
+            <ul>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Service</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="manu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-bootom">
+        <div class="get-boddy">
+            <h1>Get body in <br><span><i>shape</i></span> & stay <br>healthy</h1>
+            <p>Be physically active for 30 minutes most days of the week. <br> Break this up into three 10-minute sessions when pressed for time. <br> Healthy movement may include walking, </p>
+            <div class="get-boddy-buttons">
+                <div class="get-boddy-button1">
+                    <button>Join Club Now!</button>
+                </div>
+                <div class="get-boddy-button2">
+                    <button>Download App</button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-picture">
+            <div class="bottom-picture1">
+                <h1>500+</h1>
+                <p>Free Workout Videos</p>
+            </div>
+            <div class="bottom-picture2">
+                <div class="bottom-picture2-circle">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+                <div class="bottom-picture2-content">
+                    <h1>350+</h1>
+                    <p>Video tutorial</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="habits">
+        <div class="habits-header">
+            <h1>Change Your Habits</h1>
+            <p>Adopting new, healthier habits may protect you from serious health problems like obesity and diabetes.</p>
+        </div>
+        <div class="habits-images">
+            <div class="habits-images1 content">
+                <img class="habit-img" src="images/image 3.png" alt="no img found">
+                <h5>Movement</h5>
+                <p>process of moving</p>
+            </div>
+            <div class="habits-images2 content">
+                <img class="habit-img" src="images/image 2.png" alt="no img found">
+                <h5>Time</h5>
+                <p>measurable period during which an action</p>
+            </div>
+            <div class="habits-images3 content">
+                <img class="habit-img" src="images/image 4.png" alt="no img found">
+                <h5>Practice</h5>
+                <p>practise” is used as a verb </p>
+            </div>
+            <div class="habits-images4 content">
+                <img class="habit-img" src="images/image 5.png" alt="no img found">
+                <h5>Weight Loss</h5>
+                <p>Cut alcohol. Alcohol is a toxin</p>
+            </div>
+        </div>
+        <div class="extra-mile">
+            <div class="extra-mile-content">
+                <h1>Run an Extra Mile Easily</h1>
+                <p>to make more effort than is expected of you: He's a nice  guy, always ready to go the extra mile for his friends.  Trying and making an effort.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="extra-mile-picture">
+                <img src="images/run.png" alt="no img found">
+            </div>
+        </div>
+    </div>
+    <div class="BMI-calculator">
+        <div class="BMI-calculator-table">
+            <h1>BMI Calculator Chart</h1>
+            <table>
+                <tr>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                </tr>
+                <tr>
+                    <td>Below 18.5</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Healthy</td>
+                </tr>
+                <tr>
+                    <td>25.0 - 29.9</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>30.0 - and Above</td>
+                    <td>Obese</td>
+                </tr>
+            </table>
+        </div>
+        <div class="calculate-BMI">
+            <h1>Calculate your BMI</h1>
+            <p>This is because people from an Asian, Black African, African-Caribbean or Middle Eastern ethnic background have a higher chance of developing health problems at a lower BMI.</p>
+            <div class="BMI-input-feilds">
+                <div class="input-field1">
+                    <input type="text" placeholder="Height/cm">
+                    <input type="text" placeholder="Weight/kg">
+                </div>
+                <div class="input-field2">
+                    <div class="age">
+                        <input type="text" placeholder="Age">
+                    </div>    
+                    <div class="sex">
+                        <select name="sex" id="sex">
+                            <option>sex</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-field3">
+                    <select name="activity" id="activity">
+                        <option>Select an activity factor</option>
+                        <option>activity factor 1</option>
+                        <option>activity factor 2</option>
+                    </select>
+                </div>
+                <button>Calculate</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-teams">
+        <h1>Meet Our Team</h1>
+        <p>This is one of the best staff introduction ideas for new management who wants to get to know their staff better.</p>
+        <div class="our-teams-pictures">
+            <div class="picture pic1">
+                <img src="images/trainer1.png" alt="no img found">
+            </div>
+            <div class="picture pic2">
+                <img src="images/trainer2.png" alt="no img found">
+            </div>
+            <div class="picture pic3">
+                <img src="images/trainer3.png" alt="no img found">
+            </div>
+            <div class="picture pic4">
+                <img src="images/trainer4.png" alt="no img found">
+            </div>
+            <div class="picture pic5">
+                <img src="images/trainer5.png" alt="no img found">
+            </div>
+            <div class="picture pic6">
+                <img src="images/trainer6.png" alt="no img found">
+            </div>
+        </div>
+    </div>
+<footer>
+    <div class="footer-top">
+        <div class="footer-section1">
+            <h1><i>Fitness</i></h1>
+            <p>What do we mean by fitness? Fitness is the ability to carry out daily tasks without undue fatigue. Strong physical fitness is being able to do actives with ample energy to enjoy leisure-time hobbies.</p>
+        </div>
+        <div class="footer-section2">
+            <h1>Get Started</h1>
+            <nav>
+                <ul>
+                    <li>Service</li>
+                    <li>Contact Us</li>
+                    <li>Affiliate Program</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-section3">
+            <h1>Get Started</h1>
+            <nav>
+                <ul>
+                    <li>Fitness</li>
+                    <li>Platform</li>
+                    <li>Workout Libary</li>
+                    <li>App Design</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <hr>
+        <p>All right reserved @Fitness 2024</p>
+    </div>
+</footer>
+
+        
+
+</body>
+</html>
